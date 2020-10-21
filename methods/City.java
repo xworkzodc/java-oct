@@ -4,6 +4,7 @@ public class City{
 
 public static void main(String[] c)
 {
+	long phone=9834227704L;
 	System.out.println("invoked main method from JVM");
 	
 	printPopulation();

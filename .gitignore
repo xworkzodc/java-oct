@@ -1,0 +1,8 @@
+.classes
+*.bin
+.metadata
+.settings
+.project
+/bin
+/.metadata
+/.settings

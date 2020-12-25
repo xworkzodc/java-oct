@@ -1,6 +1,5 @@
 package com.xworkz.vtu;
 
-import com.xworkz.vtu.constants.Branch;
 import com.xworkz.vtu.engineer.CSEnginner;
 import com.xworkz.vtu.engineer.Engineer;
 import com.xworkz.vtu.engineer.TCEngineer;

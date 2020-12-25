@@ -38,6 +38,17 @@ public class CarTester {
 		carShowRoom.addCar(dto6);
 		
 		
+		carShowRoom.displayCars();
+		
+		carShowRoom.updateCarVariant(CarVariant.BASE, 1);
+		
+		//carShowRoom.displayCars();
+		
+		carShowRoom.displayCarAtIndex(1);
+		
+		carShowRoom.displayCarByModel("Jeep");
+		
+		
 		
 
 	}

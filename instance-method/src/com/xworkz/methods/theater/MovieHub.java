@@ -8,7 +8,7 @@ import java.util.Arrays;
  *
  */
 public class MovieHub {
-
+// data storage
 	private String theaterName;
 	private int totalTickets;
 	private String[] movieNames;

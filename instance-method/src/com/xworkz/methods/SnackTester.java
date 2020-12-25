@@ -1,7 +1,5 @@
 package com.xworkz.methods;
 
-import java.util.Iterator;
-
 import com.xworkz.methods.theater.MovieHub;
 
 public class SnackTester {

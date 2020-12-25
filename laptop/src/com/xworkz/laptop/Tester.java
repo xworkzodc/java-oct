@@ -1,18 +1,14 @@
 package com.xworkz.laptop;
 
-import com.xworkz.laptop.company.Admin;
-import com.xworkz.laptop.company.Lenovo;
+import com.xworkz.laptop.employee.Mobile;
 
 public class Tester {
 
 	public static void main(String[] args) {
 		
+		Mobile.setBrand("Omkar");
 		
-		Admin.develop();
-		
-		
-		
-		Lenovo.getModelNumber();
+		Mobile.setOwner("Om");
 		
 		
 	}

@@ -37,7 +37,7 @@ public class FootWear {
 		this.brand = brand;
 	}
 
-	public double getPrice() {
+	public final double getPrice() {
 		return price;
 	}
 

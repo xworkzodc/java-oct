@@ -13,4 +13,7 @@ public class ShoeFootWear extends FootWear {
 		}
 		return discount;
 	}
+	
+	
+	
 }

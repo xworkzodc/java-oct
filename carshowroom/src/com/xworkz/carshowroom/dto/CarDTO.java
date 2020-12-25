@@ -8,18 +8,16 @@ public class CarDTO {
 	private double price;
 	private CarVariant variant;
 
-	
 	public CarDTO() {
-	
+
 	}
+
 	public CarDTO(String model, double price, CarVariant variant) {
 		super();
 		this.model = model;
 		this.price = price;
 		this.variant = variant;
 	}
-	
-	
 
 	public String getModel() {
 		return model;

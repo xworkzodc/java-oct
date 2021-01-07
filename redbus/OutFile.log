@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-01-06T23:39:21</date>
+  <millis>1609956561954</millis>
+  <sequence>0</sequence>
+  <logger></logger>
+  <level>WARNING</level>
+  <class>java.util.logging.LogManager$RootLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>createExceptionalEvent</message>
+</record>
+<record>
+  <date>2021-01-06T23:39:21</date>
+  <millis>1609956561987</millis>
+  <sequence>1</sequence>
+  <logger></logger>
+  <level>WARNING</level>
+  <class>java.util.logging.LogManager$RootLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>stack3</message>
+</record>
+<record>
+  <date>2021-01-06T23:39:21</date>
+  <millis>1609956561988</millis>
+  <sequence>2</sequence>
+  <logger></logger>
+  <level>WARNING</level>
+  <class>java.util.logging.LogManager$RootLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>stack2</message>
+</record>
+<record>
+  <date>2021-01-06T23:39:21</date>
+  <millis>1609956561988</millis>
+  <sequence>3</sequence>
+  <logger></logger>
+  <level>WARNING</level>
+  <class>java.util.logging.LogManager$RootLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>stack1</message>
+</record>
+<record>
+  <date>2021-01-06T23:39:21</date>
+  <millis>1609956561989</millis>
+  <sequence>4</sequence>
+  <logger></logger>
+  <level>WARNING</level>
+  <class>java.util.logging.LogManager$RootLogger</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>main</message>
+</record>
+</log>

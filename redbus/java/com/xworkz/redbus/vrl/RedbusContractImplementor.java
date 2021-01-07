@@ -1,5 +1,7 @@
 package com.xworkz.redbus.vrl;
 
+import java.io.Serializable;
+
 import com.xworkz.redbus.contract.RedbusContract;
 
 public class RedbusContractImplementor implements RedbusContract {

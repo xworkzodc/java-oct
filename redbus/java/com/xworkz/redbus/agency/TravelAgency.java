@@ -1,8 +1,10 @@
 package com.xworkz.redbus.agency;
 
+import java.io.Serializable;
+
 import com.xworkz.redbus.contract.RedbusContract;
 
-public class TravelAgency {
+public class TravelAgency implements Serializable{
 
 	private RedbusContract contract;
 
@@ -14,6 +16,7 @@ public class TravelAgency {
 	}
 
 	public void acceptBooking() {
+		
 		System.out.println("invoked acceptBooking");
 		System.out.println("checking bookings for" + this.agencyName);
 		boolean warranty = contract.busWarranty();
@@ -31,5 +34,15 @@ public class TravelAgency {
 		}
 
 	}
+	
+	@Override
+	public TravelAgency clone() throws CloneNotSupportedException {
+		return (TravelAgency) super.clone();
+	}
 
+	
+	public String getAgencyName() {
+		return agencyName;
+	}
+	
 }

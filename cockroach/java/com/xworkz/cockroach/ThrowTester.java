@@ -2,15 +2,12 @@ package com.xworkz.cockroach;
 
 public class ThrowTester {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)throws Throwable {
 
-		String name=null;
-//		name.toLowerCase();
-		
-		int[] digits= {3,4,6,7};
-		System.out.println(digits.length);
-		System.out.println(digits[4]);
-		
+	
+		Throwable event=new Throwable();
+		System.out.println("event created");
+		throw event;
 	}
 
 }

@@ -16,7 +16,6 @@ public class HomogenousTester {
 		validages[3]="NOt";
 		//generics--jdk 1.8
 		
-		loopAndChecktype(validages);
 		
 		for (int i = 0; i < validages.length; i++) {
 			System.out.println(validages[i]);

@@ -49,4 +49,16 @@ public class MovieDTO {
 		return genre;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+	System.out.println("called equals method");
+		return super.equals(obj);
+	}
+	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	
 }

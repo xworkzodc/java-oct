@@ -29,6 +29,12 @@ public class MovieTester {
 		movieDTOs.add(dto3);
 		movieDTOs.add(dto4);
 		movieDTOs.add(dto5);
+		
+		
+		//boolean contains=movieDTOs.contains(dto5);
+		//System.out.println("contains************"+contains);
+		
+		
 //ArrayList -- decompiler 
 		Iterator<MovieDTO> iterator = movieDTOs.iterator();
 
@@ -37,8 +43,9 @@ public class MovieTester {
 			MovieDTO movie = iterator.next();
 			System.out.println(movie);
 			if (movie.getGenre().equals("Comedy")) {
-				//iterator.remove();
-				movie.setGenre(null);
+				iterator.remove();
+				
+				//movie.setGenre(null);
 				// movieDTOs.remove(movie);
 			}
 		}

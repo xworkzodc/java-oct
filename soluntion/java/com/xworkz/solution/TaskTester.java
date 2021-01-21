@@ -23,34 +23,22 @@ public class TaskTester {
 		doorNos.add(729l);
 		doorNos.add(370l);
 		doorNos.add(370l);
+		
+		
 		// convert to []
 		// iterator
 
 		Collection<Long> tempDoorNos = new ArrayList<Long>();
-		Iterator<Long> iterator = doorNos.iterator();
-		System.out.println("size of " + doorNos.size());
-		while (iterator.hasNext()) {
-			Long doorNo = iterator.next();// 115,420,420,34
-			System.out.println("Door No :" + doorNo);
-			if (tempDoorNos.contains(doorNo)) {
-				System.out.println("duplicate door no" + doorNo);
-			} else {
-				System.out.println("added temp " + doorNo);
-				tempDoorNos.add(doorNo);
-			}
-
-		}
-
-		System.out.println("tempDoorNos size " + tempDoorNos.size());
-
-		doorNos.clear();
-	//for each
-		Iterator<Long> tempIterator=tempDoorNos.iterator();
-		while(tempIterator.hasNext())
-		{
-			doorNos.add(tempIterator.next());
-		}
-		System.out.println("size of door nos"+doorNos.size());
+		//tempDoorNos.addAll(doorNos);
+		tempDoorNos.add(729l);
+		tempDoorNos.add(370l);
+		tempDoorNos.add(370l);
+		Collection<Long> doorNos2 = new ArrayList();
+		doorNos2.add(370l);
+		
+		tempDoorNos.removeAll(doorNos2);
+		
+	System.out.println(tempDoorNos.size());
 	}
 
 }

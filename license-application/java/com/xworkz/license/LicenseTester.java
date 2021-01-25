@@ -1,5 +1,7 @@
 package com.xworkz.license;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import com.xworkz.license.constants.BloodGroup;
@@ -18,6 +20,12 @@ public class LicenseTester {
 		AddressDTO addressDTO = new AddressDTO(3254, "NA", 560003, "Soundatti", "Soundatti", "Ka", "Na");
 
 		Date dob = new Date();// 16/10/1997
+		SimpleDateFormat format=new SimpleDateFormat("dd/mm/yyyy");
+		try {
+			dob=format.parse("16/10/1997");
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
 
 		LicenseDTO dto = new LicenseDTO("Soubhagya", 23, addressDTO, dob, 8884923476l, BloodGroup.AB_POSITIVE,
 				Gender.FEMALE);

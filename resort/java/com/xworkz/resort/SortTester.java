@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.xworkz.resort.sort.GarageComparator;
+
 public class SortTester {
 
 	public static void main(String[] args) {
@@ -22,7 +24,8 @@ public class SortTester {
 		
 		
 		//Collections is a utility class ??
-		Collections.sort(garageToolList);
+		GarageComparator comp=new GarageComparator();
+		Collections.sort(garageToolList,comp);
 		
 		for (String toolSorted : garageToolList) {
 			System.out.println(toolSorted);

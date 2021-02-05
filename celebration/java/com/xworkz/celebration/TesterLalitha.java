@@ -29,6 +29,7 @@ public class TesterLalitha {
 		
 		System.out.println(fighterDTOs.size());
 		fighterDTOs.forEach(f->System.out.println(f.getName()));
+		//test for commit
 		
 		
 	}

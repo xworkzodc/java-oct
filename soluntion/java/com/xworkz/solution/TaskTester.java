@@ -27,12 +27,21 @@ public class TaskTester {
 		
 		// convert to []
 		// iterator
+		Collection<Long> tempDoorNos1 = new ArrayList<Long>();
+		for (Long long1 : doorNos) {
+			if(!tempDoorNos1.contains(long1))
+			{
+			tempDoorNos1.add(long1);	
+			}
+		}
+		
 
 		Collection<Long> tempDoorNos = new ArrayList<Long>();
-		//tempDoorNos.addAll(doorNos);
+		tempDoorNos.addAll(doorNos);
 		tempDoorNos.add(729l);
 		tempDoorNos.add(370l);
 		tempDoorNos.add(370l);
+		
 		Collection<Long> doorNos2 = new ArrayList();
 		doorNos2.add(370l);
 		

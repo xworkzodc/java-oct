@@ -1,6 +1,7 @@
 package com.xworkz.license.dao.impl;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import com.xworkz.license.constants.VehicleType;
@@ -58,8 +59,18 @@ public class LicenseDAOImpl implements LicenseDAO {
 	}
 
 	@Override
-	public boolean deleteByIdProofNo(String idPrrof) {
+	public boolean deleteByIdProofNo(String idProof) {
 		// TODO Auto-generated method stub
+		// collection
+		Iterator<LicenseDTO> iterator = this.database.iterator();
+		while (iterator.hasNext()) {
+			LicenseDTO dto = iterator.next();
+			if (dto.getIdProofNo().equals(idProof)) {
+				iterator.remove();
+				break;
+			}
+
+		}
 		return false;
 	}
 }

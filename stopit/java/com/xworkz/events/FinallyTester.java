@@ -4,7 +4,7 @@ public class FinallyTester {
 
 	public static void main(String[] args) {
 //JDBC,File----Resources
-		
+		Class class1;
 		try {
 
 			System.out.println("stmt 1");

@@ -5,6 +5,7 @@ import com.xworkz.events.business.EmailService;
 public class EmailServiceTester {
 
 	public static void main(String[] args) {
+		
 		EmailService service = new EmailService();
 		//service.setEmailLimit(100);
 		service.addEmail("contact@x-workz.in");

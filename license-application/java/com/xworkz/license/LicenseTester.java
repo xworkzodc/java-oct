@@ -22,7 +22,7 @@ public class LicenseTester {
 		Date dob = new Date();// 16/10/1997
 		SimpleDateFormat format=new SimpleDateFormat("dd/mm/yyyy");
 		try {
-			dob=format.parse("16/10/1997");
+			dob=format.parse("16/1u/1997");
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}

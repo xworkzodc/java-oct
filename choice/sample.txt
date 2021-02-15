@@ -1,0 +1,48 @@
+RandomAccess
+Math.random();
+Generate random text 
+--> 8 chars long, one special char
+Robot 
+
+
+
+
+// WarDTO--> name, countryName, wonBy,lostBy
+// warList 
+public Optional<WarDTO> 
+fetchByCountry(String name)
+{
+System.out.println("invoked fetchByCountry");
+
+for(WarDTO w:this.warList)
+{
+Optional<String> cn=w.getCountryName();
+if(cn.isPresent())
+{
+String cname=cn.get();
+if(cname.equlas(name))
+{
+sysout("cname is found");
+return Optional.of(w);
+}
+
+return Optional.empty();
+}
+
+
+}
+
+
+}
+
+
+Lombok -->>>
+
+Class---> 
+
+1. Download lombok jar (executable jar)
+2. Install Lombok to eclipse 
+3. Add lombok.jar into eclipse project
+4. USe @Getter,@Setter, @ToString
+
+

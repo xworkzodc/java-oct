@@ -2,6 +2,7 @@ package com.xworkz.vtu.exam;
 
 public class Exam {
 
+	
 	private String code;
 	private double fees;
 	private HallTicket hallTicket;

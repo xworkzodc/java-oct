@@ -17,7 +17,7 @@ public class CosmeticDAOImpl implements CosmeticDAO {
 		System.out.println("Created CosmeticDAOImpl");
 	}
 
-	@Override
+	@Override//null, new  dto
 	public boolean save(CosmeticDTO dto) {
 		boolean added = false;
 		boolean contains = this.cosmetics.contains(dto);// Lakme

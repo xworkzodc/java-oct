@@ -11,5 +11,5 @@ public class WarDTO {
 
 	private String name;
 	private String country;
-	
+
 }

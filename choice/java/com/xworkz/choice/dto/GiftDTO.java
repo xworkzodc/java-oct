@@ -12,8 +12,6 @@ public class GiftDTO {
 		CHOCOLATE, WATCH, BAG, MOBILE, FLOWER, DOLL, MUG, RING
 	}
 
-
-
 	public double getPrice() {
 		return price;
 	}

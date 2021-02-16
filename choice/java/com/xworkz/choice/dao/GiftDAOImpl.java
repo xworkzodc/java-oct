@@ -1,5 +1,6 @@
 package com.xworkz.choice.dao;
 
+import java.security.cert.PKIXRevocationChecker.Option;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -24,18 +25,11 @@ public class GiftDAOImpl implements GiftDAO {
 	@Override
 	public Optional<GiftDTO> fetchByGivenBy(String name) {
 // Rohan,Pasha,Skanda
-
+		final Optional<GiftDTO> op=null;
 		for (GiftDTO e : list) {
 			Optional<String> givenby = e.getGivenBy();
-			if (givenby.isPresent()) {
-				String givenByString = givenby.get();
-				if (givenByString.equals(name)) {
-					System.out.println("name is match, will create opt of e");
-					return Optional.of(e);
-
-				}
-			}
-
+			return givenby.filter(p->p.equals(name)).flatMap(ee->Optional.of(e));
+			
 		}
 		return Optional.empty();
 	}

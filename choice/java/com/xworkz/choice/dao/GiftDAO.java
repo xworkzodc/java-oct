@@ -8,6 +8,9 @@ public interface GiftDAO {
 
 	public void save(GiftDTO dto);
 
-	public Optional<GiftDTO>
-	fetchByGivenBy(String name);
+	public Optional<GiftDTO> fetchByGivenBy(String name);
+	
+	default int totalSize() {
+		return 0;
+	}
 }

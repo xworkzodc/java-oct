@@ -1,12 +1,10 @@
 package com.xworkz.choice;
 
+import static java.util.stream.Collectors.toList;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
- import static java.util.stream.Collectors.toList;
-
-import java.lang.reflect.Constructor;
-import java.util.stream.Stream;
 
 import com.xworkz.choice.dto.WonderDTO;
 import com.xworkz.choice.dto.WonderDTO.WonderType;

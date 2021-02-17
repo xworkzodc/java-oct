@@ -1,6 +1,5 @@
 package com.xworkz.choice.dao;
 
-import java.security.cert.PKIXRevocationChecker.Option;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -34,4 +33,10 @@ public class GiftDAOImpl implements GiftDAO {
 		return Optional.empty();
 	}
 
+	
+	@Override
+	public int totalSize() {
+		// TODO Auto-generated method stub
+		return this.list.size();
+	}
 }

@@ -19,7 +19,7 @@ public class TesterAishwarya {
 		dto.setPrice(150);
 		
 		dao.save(dto);
-		
+		System.out.println(dao.totalSize());
 		Optional<GiftDTO> opt=dao.fetchByGivenBy("Veeresh");
 		opt.ifPresent(v->System.out.println(v));
 		
